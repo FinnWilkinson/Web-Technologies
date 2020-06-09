@@ -1,0 +1,251 @@
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.workout-input {
+	min-width: 100px;
+	width: 85%;
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+  float: right;
+  margin: 10px 20px 0px 0px;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.25s;
+}
+
+.workout-input:hover {
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.workout-input h2{
+	color: #2978A0;
+	text-decoration: underline #2978A0;
+}
+
+.workout-input h3{
+	color: #2978A0;
+}
+
+.workout-input input{
+	width: 40%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #000000;
+  border-bottom: 1px solid #2978A0;
+  font-size: 18px;
+  padding: 8px 0;
+	text-align: center;
+}
+
+.workout-input.over {
+	border: 2px dashed #999;
+}
+
+.workout-input .add_set_btn {
+	width: 10%;
+	background: none;
+	border: 2px solid #2978A0;
+	color: #000000;
+	padding: 5px;
+	font-size: 18px;
+	margin: 12px 0;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.workout-input .remove_exercise_btn {
+	background: none;
+	border: 2px solid #2978A0;
+	color: #000000;
+	padding: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  float: right;
+  margin-right: 10px;
+}
+
+.workout-input .remove_set_btn {
+	background: none;
+	border: 1px solid #2978A0;
+	color: #000000;
+  font-size: 18px;
+  font-weight: 700;	
+  cursor: pointer;
+  transition: 0.25s;
+  margin-left: 5%;
+}
+
+.workout-input .remove_set_btn:hover{
+  background-color: #2978A0;
+  color: white;
+}
+
+.workout-input .remove_exercise_btn:hover{
+  background-color: #2978A0;
+  color: white;
+}
+
+.workout-input .add_set_btn:hover{
+  background-color: #2978A0;
+  color: white;
+}
+
+#function_btns .btns {
+	width: 100%;
+	background: none;
+	border: 2px solid #2978A0;
+	color: #000000;
+	padding: 5px;
+	font-size: 18px;
+	margin: 10px 0 0 20px;
+	cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+#function_btns .btns:hover{
+  background-color: #2978A0;
+  color: white;
+}
+
+#function_btns {
+  width: 10%;
+}
+
+#workout_popup_form {
+  display: none;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 99;
+  
+}
+
+.workout-form-container::-webkit-scrollbar{
+	display: none;
+}
+
+.workout-form-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #EEEEEE;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+.workout-form-container .popup_btn {
+  background-color: #2978A0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin-bottom:10px;
+  padding: 5px;
+  font-size: 25px;
+  margin: 10px 0px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.workout-form-container .popup_btn_exit {
+  background-color: red;
+  width: 8%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.workout-form-container .exercise_search{
+  padding-left: 30px;
+  width: 30%;
+  padding-left: 20px;
+  margin: 0;
+	padding: 5px;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.workout-form-container .exercise_dropdown{
+  width: 30%;
+  position: relative;
+  display: inline-block;
+  z-index: 99;
+}
+
+.exercise_dropdown .dropbtn{
+  width: 100%;
+	background: none;
+  border: 2px solid #2978A0;
+	padding: 5px;
+	color: #000000;
+	font-size: 18px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.exercise_dropdown .dropdown_content{
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.exercise_dropdown:hover .dropdown_content{
+  display: block;
+}
+
+.exercise_dropdown:hover .dropbtn{
+  background-color: #2978A0;
+  color: white;
+}
+
+.exercise_dropdown .filter_option{
+  display: block;
+  width: 100%;
+  background: none;
+	color: #000000;
+	font-size: 18px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+}
+
+.exercise_dropdown .filter_option:hover{
+  background-color: #ddd;
+}
+
+.workout_name{
+  border: 2px solid #2978A0;
+  background: transparent;
+  text-align: center;
+  font-size: 30px;
+  margin: 0.5% 1% 0 0;
+  float: right;
+  overflow: hidden;
+}

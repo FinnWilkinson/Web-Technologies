@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/login.css"/>
+		<link rel="stylesheet" href="/css/croppie.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/scripts/general.js"></script>
+		<script src="/scripts/register_page.js"></script>
+		<script src="/scripts/exif.js"></script>
+		<script src="/scripts/croppie.js"></script>
+		<title> Register </title>
+	</head>
+	<body>
+		<div class="container">
+			<form id="register_form" method="POST" enctype="multipart/form-data">
+				<div class="register-form">
+					<h1>Register</h1>
+					<div class='left_side'>
+						<input id="username" type='text' name='username' placeholder='Username' required='true'></input><br/>
+						<input type='password' name='password' placeholder="Password" required='true'></input><br/>
+						<input type='text' name='first_name' onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" placeholder="First Name" required='true'></input><br/>
+						<input type='text' name='last_name' onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" placeholder="Last Name" required='true'></input><br/>
+						<select name='age_group' required='true'>
+							<option value="" selected="selected" disabled="true">Select your Age Group</option>
+							<option value="Sub-Junior">Sub-Junior(14 - 18)</option>
+							<option value='Junior'>Junior (19 - 23)</option>
+							<option value='Open'>Open (No restrictions)</option>
+							<option value='Master I'>Master I (40 - 49)</option>
+							<option value='Master II'>Master II (50 - 59)</option>
+							<option value='Master III'>Master III (60 - 69)</option>
+							<option value='Master IV'>Master IV (70+)</option>
+						</select><br/>
+						<select id='weight_select' name='weight_class' required='true'>
+							<option value="" selected="selected" disabled="true">Select your Weight Class</option> 
+							<option value='59'>&lt; 59 Kg</option>
+							<option value='66'> (60 - 66) Kg </option>
+							<option value='74'> (67 - 74) Kg </option>
+							<option value='83'> (75 - 83) Kg </option>
+							<option value='93'> (84 - 93) Kg </option>
+							<option value='105'> (94 - 105) Kg </option>
+							<option value='120'> (106 - 120) Kg </option>
+							<option value='121'> &gt; 120 Kg </option>
+						</select>
+					</div>
+					<div class='right_side'>
+						<img id="profile_pic" class="image" src="img/default.png"></img><br/>
+						<button id="upload_profile_picture">Upload Profile Picture</button>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="left_side">
+						<button id='back_btn'>Back to Login</button>
+					</div>
+					<div class="right_side">
+						<input id="register_btn" type="submit" value="Register"></input>
+					</div>
+				</div>
+			</form>
+			<div id="profile_picture_modal" class="modal">
+				<div class="modal-content">
+					<div id="page">
+						<div id="demo-basic">
+						</div>
+					</div>	
+					<span id="modal-close" class="close">&#215;</span><br/>
+					<form method="POST" enctype="multipart/form-data" id="profile_pic_form">
+						<input id="chosen_file" name="profilePicture" type="file"/>
+					</form> <br/>
+					<button id="crop_submit">Crop and Submit</button>
+					
+				</div>
+			</div>
+			
+		</div>
+
+		
+		<div class="backdrop">
+			<div class="backgrounds">
+				<img src="../img/Background Photo 1.png" style="width:100%; height: 100%;"/>
+			</div>
+			<div class="backgrounds">
+				<img src="../img/Background Photo 2.png" style="width:100%; height: 100%;"/>
+			</div>
+			<div class="backgrounds">
+				<img src="../img/Background Photo 3.png" style="width:100%; height: 100%;"/>
+			</div>
+			<div class="backgrounds">
+				<img src="../img/Background Photo 4.png" style="width:100%; height: 100%;"/>
+			</div>
+		</div>
+
+	</body>
+</html>

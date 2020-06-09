@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/planner.css"/>
+		<title> Workout Planner </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/scripts/general.js"></script>
+		<script src="/scripts/planner.js"></script>
+	</head>
+	<body>
+		<%- include('partials/header.ejs') %>
+		<div id="main" class='content'>
+			<%- include('partials/menu.ejs') %>
+			<span id='menu' onclick="openNav()">&#9776; Menu</span>
+			<input class="workout_name" id="workout_name" type="text" placeholder="Workout Name"/> 
+			<div id="planner"></div>
+			<div id="function_btns">
+				<button id="add_exercise_btn" class="btns" onclick="openForm()">Add Exercise</button>
+				<button id="save_workout_btn" class="btns" onclick="saveWorkout()">Save Workout</button>
+			</div>	
+		</div>
+
+		<div class="workout_popup" id="workout_popup_form">
+			<form action="" class="workout-form-container">
+			  <input type="text" class="exercise_search" id="exercise_search" placeholder="Search" oninput="searchExercises(this.value)"/>
+			  <div class="exercise_dropdown" id="exercise_dropdown">
+				  <button class="dropbtn" type="button">Filter</button>
+				  <div class="dropdown_content" id="dropdown_items">
+					<button name="none" id="none_btn" type="button" class="filter_option" onclick="filterExercises('')">No Filter</button>
+					<button name="Arms" id="arms_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Arms</button>
+					<button name="Back" id="back_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Back</button>
+					<button name="Chest" id="chest_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Chest</button>
+					<button name="Core" id="core_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Core</button>
+					<button name="Legs" id="legs_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Legs</button>
+					<button name="Shoulders" id="shoulders_btn" type="button" class="filter_option" onclick="filterExercises(this.name)">Shoulders</button>
+				  </div>
+			  </div>
+			  <button id="exit_btn" type="button" class="popup_btn_exit" onclick="closeForm()">Cancel</button>
+			</form>
+		  </div>
+	</body>
+</html>

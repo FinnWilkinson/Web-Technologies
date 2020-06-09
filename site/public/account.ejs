@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/account.css"/>
+	<link rel="stylesheet" href="/css/croppie.css"/>
+	<title> My Profile </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.js"></script>
+	<script src="/scripts/general.js"></script>
+	<script src="/scripts/account.js"></script>
+	<script src="/scripts/exif.js"></script>
+	<script src="/scripts/croppie.js"></script>
+</head>
+<body>
+
+	<%- include('partials/header.ejs') %>
+	
+	<div id="main" class="content">
+		<%- include('partials/menu.ejs') %>
+		<span id='menu' onclick="openNav()">&#9776; Menu</span>
+		<div class="card">
+			<form id="register_form" method="POST" enctype="multipart/form-data">
+				<img id="profile_pic" class="image" src="<%= profile_picture %>"></img><br/>
+				<button id="upload_profile_picture">Edit Profile Picture</button><br/>
+				<label for="username">Username:</label>
+				<input id='username' type='text' name='username' placeholder='Username' required='true' disabled='disabled' value="<%= username %>"></input><br/>
+				<label for="first_name">First Name:</label>
+				<!-- <input type='password' name='password' placeholder="Password" required='true' disabled='disabled' value="<%= password %>"></input><br/> -->
+				<input id='first_name' type='text' onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" name='first_name' placeholder="First Name" required='true' disabled='disabled' value="<%= first_name %>"></input><br/>
+				<label for="last_name">Last Name:</label>
+				<input id='last_name' type='text' onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" name='last_name' placeholder="Last Name" required='true' disabled='disabled' value="<%= last_name %>"></input><br/>
+				<label for="age_group">Age Group:</label>
+				<select id="age_group_select" name='age_group' disabled='disabled' required='true'>
+					<option value="Sub-Junior">Sub-Junior(14 - 18)</option>
+					<option value='Junior'>Junior (19 - 23)</option>
+					<option value='Open'>Open (No restrictions)</option>
+					<option value='Master I'>Master I (40 - 49)</option>
+					<option value='Master II'>Master II (50 - 59)</option>
+					<option value='Master III'>Master III (60 - 69)</option>
+					<option value='Master IV'>Master IV (70+)</option>
+				</select><br/>
+				<label for="weight_class">Weight Class:</label>
+				<select id='weight_class_select' name='weight_class' disabled='disabled' required='true'>
+					<option value='59'>&lt; 59 Kg</option>
+					<option value='66'> (60 - 66) Kg </option>
+					<option value='74'> (67 - 74) Kg </option>
+					<option value='83'> (75 - 83) Kg </option>
+					<option value='93'> (84 - 93) Kg </option>
+					<option value='105'> (94 - 105) Kg </option>
+					<option value='120'> (106 - 120) Kg </option>
+					<option value='121'> &gt; 120 Kg </option>
+				</select><br/>
+				<button id="make_changes_btn">Edit Profile</button>
+				<input id="submit_changes" type="submit" value="Save Changes"></input>
+			</form>
+		</div>
+	</div>
+
+	<div id="profile_picture_modal" class="modal">
+		<div class="modal-content">
+			<div id="page">
+				<div id="demo-basic">
+				</div>
+			</div>	
+			<span id="modal-close" class="close">&#215;</span><br/>
+			<br/>
+			<form method="POST" enctype="multipart/form-data" id="profile_pic_form">
+				<input id="chosen_file" name="profilePicture" type="file"/><br/>
+				<input id="crop_submit" type="submit" name="submit"></input>
+			</form><br/>	
+		</div>
+	</div>
+
+</body>
+</html>

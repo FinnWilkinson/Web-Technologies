@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/admin.css"/>
+        <title> Admin Page </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='scripts/general.js'></script>
+        <script src='scripts/admin.js'></script>
+
+    </head>
+    <body>        
+        <%- include('partials/header.ejs') %>
+        <%- include('partials/menu.ejs') %>
+        <span id='menu' onclick="openNav()">&#9776; Menu</span>
+
+        <div class='main'>
+            <button id="exercise_add_btn">Add Exercise</button><br/>
+            <button id="exercise_edit_btn">Edit Exercise</button><br/>
+        </div>
+
+        <div id="add_modal" class="modal">
+            <div class="modal-content">
+                <span id="add_modal_close" class="close">&#215;</span><br/>
+                <form id="add_exercise_form">
+                    <input type="text" name="exercise_name" onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" placeholder="Exercise Name" required='true'></input>
+                    <select id="body_part_select" required='true'>
+                        <option id="placeholder" disabled='disabled' selected='selected'>Select Body Part</option>
+                        <option value="Arms">Arms</option>
+                        <option value="Chest">Chest</option>
+                        <option value="Back">Back</option>
+                        <option value="Legs">Legs</option>
+                        <option value="Core">Core</option>
+                        <option value="Shoulders">Shoulders</option>
+                    </select><br/>
+                    <input id="exercise_submit" type="submit"></input>
+                </form>
+            </div>
+        </div>
+
+        <div id="edit_modal" class="modal">
+            <div class="modal-content">
+                <span id="edit_modal_close" class="close">&#215;</span><br/>
+                <form id="edit_exercise_form">
+                    <input id="search" type="text" onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" list="exercises" name="exercise_name" placeholder="Type the name of the exercise you wish to edit"></input><br/>
+                    <datalist id="exercises">
+                    </datalist>
+                    <input id="exercise_id" type='number' name="exercise_id" placeholder="ID" disabled='disabled'></input>
+                    <input id="edit_exercise_name" type="text"  onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" name="new_exercise_name" placeholder="Exercise Name" required='true'></input>
+                    <select id="edit_body_part_select" required='true'>
+                        <option id="placeholder" disabled='disabled' selected='selected'>Select Body Part</option>
+                        <option value="Arms">Arms</option>
+                        <option value="Chest">Chest</option>
+                        <option value="Back">Back</option>
+                        <option value="Legs">Legs</option>
+                        <option value="Core">Core</option>
+                        <option value="Shoulders">Shoulders</option>
+                    </select><br/>
+                    <input id="edit_submit" type="submit"></input>
+
+                    <input id="delete" type="submit" value="Delete"></input>
+
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+.rep_max_calculator{
+    left: 0;
+    right: 0;
+    height: 10%;
+    margin: 1% 1% 0% 1%;
+	box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.rep_max_calculator:hover{
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.rep_max_calculator h1{
+    margin: 1% 5% 1% 1%;
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    border-bottom: #000000 2px solid;
+}
+
+.rep_max_calculator h2{
+    display: inline-block;
+    font-size: 18px;
+    margin: 1% 10% 1% 1%;
+}
+
+.rep_max_calculator input[type="number"]{
+    display: inline-block;
+    background: none;
+	outline: none;
+	border: none;
+    width: 20%;
+    padding-left: 20px;
+    margin: 1% 1% 1% 1%;
+	padding: 5px;
+    font-size: 18px;
+    border-bottom: 1px solid #2978A0;
+}
+
+.rep_max_calculator input[type="radio"]{
+    display: inline-block;
+}
+
+.rep_max_calculator label{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.graph_container {
+    width: 46.5%;
+    height: 200vh;
+    margin: 1% 0% 1% 1%;
+    padding: 1%;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+    float: left;
+    overflow: hidden;
+}
+
+.graph_container:hover {
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.graph_container h1{
+    margin: 1% 5% 0% 1%;
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    border-bottom: #000000 2px solid;
+}
+
+.workouts_container{
+    width: 46.5%;
+    height: 200vh;
+    margin: 1% 1% 1% 0%;
+    padding: 1%;
+    float: right;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
+
+.workouts_container:hover {
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.workouts_container .workout_div{
+    border: 2px solid #bbbbbb;
+    margin: 5% 1% 5% 1%;
+    overflow: hidden;
+}
+
+.workouts_container h1{
+    margin: 1% 5% 5% 1%;
+    font-size: 35px;
+    color: #000000;
+    border-bottom: #000000 2px solid;
+}
+
+.workouts_container h2{
+    font-size: 25px;
+    display: inline-block;
+    margin: 1% 5% 1% 1%;
+}
+
+.workouts_container .workout_btn{
+    width: 10%;
+	background: none;
+	border: 2px solid #2978A0;
+	color: #000000;
+	padding: 5px;
+    font-size: 18px;
+    margin: 1% 1% 1% 5%;
+	cursor: pointer;    
+    overflow: hidden;
+    float: right;
+}
+
+.workouts_container .workout_btn:hover{
+    background-color: #2978A0;
+    color: white;
+  }
+
+.graph_container .chart-container {
+	margin: auto;
+	min-height: 100px;
+	min-width: 300px;
+	height: 30%;
+    width: 100%;
+    display: block;
+    margin: 3% 0 3% 0;
+}

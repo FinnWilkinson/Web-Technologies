@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1499"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Logout Icon.svg">
+  <defs
+     id="defs1493">
+    <linearGradient
+       id="linearGradient2074"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2072" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="585.1837"
+     inkscape:cy="537.12578"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1496">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g856">
+      <path
+         id="path2082"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:4.91339;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+         d="M 259.55273 490.93359 A 84.852813 84.852813 0 0 0 174.75586 575.78711 A 84.852813 84.852813 0 0 0 259.60938 660.64062 A 84.852813 84.852813 0 0 0 344.46289 575.78711 A 84.852813 84.852813 0 0 0 259.60938 490.93359 A 84.852813 84.852813 0 0 0 259.55273 490.93359 z M 260.4707 523.66992 A 51.256263 51.256263 0 0 1 311.72656 574.92578 A 51.256263 51.256263 0 0 1 260.4707 626.18164 A 51.256263 51.256263 0 0 1 209.21484 574.92578 A 51.256263 51.256263 0 0 1 260.4707 523.66992 z "
+         transform="scale(0.26458333)" />
+      <rect
+         y="145.12735"
+         x="89.996948"
+         height="10.423511"
+         width="88.806366"
+         id="rect2088"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill" />
+      <ellipse
+         ry="5.2117553"
+         rx="5.4790254"
+         cy="150.3391"
+         cx="178.06833"
+         id="path2090"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill" />
+      <rect
+         y="153.08035"
+         x="169.14433"
+         height="19.166079"
+         width="6.2366071"
+         id="rect2092"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+         id="rect2096"
+         width="6.2366071"
+         height="18.898809"
+         x="160.45088"
+         y="153.26933" />
+      <rect
+         y="153.8363"
+         x="151.75743"
+         height="18.364271"
+         width="6.2366071"
+         id="rect2098"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill" />
+    </g>
+  </g>
+</svg>

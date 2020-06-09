@@ -1,0 +1,10 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a>
+    <a href="/">My Homepage</a>
+    <a href="/account">My Profile</a>
+    <a href="/planner">Workout Planner</a>
+    <% if (role === 'admin') { %>
+        <a href="/admin">Admin</a>
+    <% } %>
+    <a href="/logout">Logout</a>
+</div>

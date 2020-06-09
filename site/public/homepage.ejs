@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/homepage.css"/>
+	<title> My Homepage </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/scripts/general.js"></script>
+	<script src="/scripts/homepage.js"></script>
+</head>
+<body>
+	
+	<%- include('partials/header.ejs') %>
+	
+
+	<div id="main" class='content'>
+		<%- include('partials/menu.ejs') %>
+		<span id='menu' onclick="openNav()">&#9776; Menu</span>
+		<div class="rep_max_calculator">
+			<h1>1RM Calculator</h1>
+			<input type="number" class="rep_max_weight" min='0' id="1rm_weight_input" placeholder="Weight / Kg"/>
+			<input type="number" class="rep_max_reps" min='0' id="1rm_reps_input" placeholder="Number of Reps" oninput="calc1RM()"/>
+			<h2 id="1rm_result"> = N/A</h2>
+			<input type="radio" name="formula_selector" id="epley_radio" value="Epley" checked="checked" onclick="calc1RM()"/>
+			<label for="epley_radio">Epley</label>
+			<input type="radio" name="formula_selector" id="brzycki_radio" value="Brzycki" onclick="calc1RM()"/>
+			<label for="brzycki_radio">Brzycki</label>
+
+		</div>
+
+		<div class="container">
+			<div class="graph_container">
+				<h1>Estimated One Rep Max Graphs</h1> 
+				<div class="chart-container">
+					<canvas id="bench_chart"></canvas>
+				</div>
+			
+				<div class="chart-container">
+					<canvas id="squat_chart"></canvas>
+				</div>
+			
+				<div class="chart-container">
+					<canvas id="deadlift_chart"></canvas>
+				</div>
+			</div>
+	
+			<div class="workouts_container">
+				<h1>My Workouts</h1>
+				<div id="workouts_list">
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+	
+</body>
+</html>

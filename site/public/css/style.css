@@ -1,0 +1,143 @@
+html {
+	scrollbar-width: none;
+}
+
+body {
+	margin: 0px;
+	font-family: Arial, sans-serif;
+	
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	background-color: #070707;
+	overflow-x: hidden;
+	transition: 0.5s;
+	white-space: nowrap;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0s;
+}
+
+.sidenav a:hover {
+	color: #2978A0;
+}
+
+.sidenave .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.header {
+	color: #ffffff;
+	background-color: #2978A0;
+	width: 100%;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	height: 100px;
+}
+
+.header h1 {
+	float: left;
+	padding-top: 10px;
+}
+
+.header .pp_container {
+	float: right;
+	padding-right: 50px;
+	padding-top: 10px;
+}
+
+.header .pp {
+	max-width: 80px;
+	max-height: 80px;
+	border-radius: 50%;
+}
+
+.site_logo{
+	float: left;
+	max-width: 90px;
+	max-height: 90px;
+	border: 0;
+	background: transparent;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 100px;
+}
+
+.description {
+	width: 100%;
+	text-align: left;
+	display: block;
+	float: left;
+	overflow: hidden;
+	border-bottom: solid;
+}
+
+.description p {
+	width: 100%;
+}
+
+.description img {
+	float: left;
+	margin-bottom: 2%;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+#menu {
+	font-size: 30px;
+	cursor: pointer;
+}
+	
+.sidenav a[href*='/'] {
+	background: url("../img/Homepage Icon.svg") no-repeat left center;
+	background-size: 28px;
+}
+
+.sidenav a[href*='/account'] {
+	background: url("../img/Profile Logo.svg") no-repeat left center;
+	background-size: 28px;
+}
+
+.sidenav a[href*='/planner'] {
+	background: url("../img/Planner Icon.svg") no-repeat left center;
+	background-size: 28px;
+}
+
+.sidenav a[href*='/admin'] {
+	background: url("../img/Admin Icon.svg") no-repeat left center;
+	background-size: 28px;
+}
+
+.sidenav a[href*='/logout'] {
+	background: url("../img/Logout Icon.svg") no-repeat left center;
+	background-size: 28px;
+}
+
+::-webkit-scrollbar {
+	display: none; 
+}
