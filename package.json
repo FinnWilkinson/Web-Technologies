@@ -4,7 +4,7 @@
   "description": "web tech coursework",
   "main": "server.js",
   "dependencies": {
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "chart.js": "^2.9.3",
     "croppie": "^2.6.4",
     "ejs": "^3.0.1",
